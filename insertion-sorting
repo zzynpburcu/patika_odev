@@ -1,0 +1,56 @@
+Insertion Sorting
+
+[ 22 , 27, 16, 2, 18, 6 ] 
+
+2. Eleman başlangıç elemanı olarak seçilir ve ilk elemanla karşılaştırılır.
+
+27 > 22 ifadesi doğru olduğu için 3. Elemana geçilir.
+
+16 > 27 ifadesi yanlıştır ve 16 ile soldaki elemanlar karşılaştırılıp uygun yere yerleştirilir.
+
+[ 16, 22, 27, 2, 18, 6 ] 
+
+Yeni dizimiz yukarıdaki gibidir. Bir sonraki aşamada 4. Elemana geçeriz.
+
+2 > 27 ifadesi yanlıştır. 27 ile 2 yer değiştirir ve 2 soldaki elemanlar ile karşılaştırılıp doğru yere yerleştirilir.
+
+[ 2, 16, 22, 27, 18, 6 ]
+
+5. Eleman ile devam edilir. 18 ile 27 karşılaştırılır. 18 > 27 ifadesi yanlış olduğu için yer değiştirilir. Ve soldaki elemanlarla karşılaştırılır.
+
+[ 2, 16, 18, 22, 27, 6 ]
+
+Sonuncu eleman ile devam edilir. 6 > 27 yanlıştır ve yer değiştirilir. 6 elemanı bir önceki elemanlarla karşılaştırılıp doğru yere yerleştirilir.
+
+[ 2, 6, 16, 18, 22, 27 ]
+
+--------------
+
+O( n^2) dir.
+
+--------------
+
+Dizi sıralandıktan sonra 18 sayısının time complexity olarak average case’dir.
+
+--------------------------------------------------------------------------------
+
+Insertion Sorting
+ 
+[ 7, 3, 5, 8, 2, 9, 4, 15, 6 ]  
+
+1. Adım 3>7 yanlış, 3 ve 7 yer değişir.
+
+[ 3, 7, 5, 8, 2, 9, 4, 15, 6 ]
+
+2. Adım 5>7 yanlış, 5 ve 7 yer değişir.
+
+[ 3, 5, 7, 8, 2, 9, 4, 15, 6 ]
+
+3. Adım 8>7 doğru, bir sonraki elemana geçilir.
+
+4. Adım 2>8 yanlış, 2 ve 8 yer değiştirir. 2 soldaki elemanlarla karşılaştırılıp uygun yere yerleştirilir.
+
+[ 2, 3, 5, 7, 8, 9, 4, 15, 6 ]
+
+
+
