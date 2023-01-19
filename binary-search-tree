@@ -1,0 +1,38 @@
+Binary-Search-Tree 
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+                            7
+                         /      \
+                        5        8
+                     /      \        \
+                   1        6        9
+                 /  \       
+               0    3   
+                    /    \
+                   2    4
+
+
+7 Root Node’tur. 
+
+5, 7’den küçük olduğu için sola yerleştirilir.
+
+1, 7’den küçüktür. Sola gidilir. Burada bir Child note olduğu için onunla karşılaştırılır. Küçükse sola büyükse sağa gönderilir.
+
+1, 5’ten küçük olduğu için sola yerleştirilir. 
+
+8, 7 den büyüktür. Child note olmadığı için sağa yerleştirilip Child note olur.
+
+3, 7 den küçüktür, sola bakıyoruz 5 den de küçüktür. tekrar sola bakıyoruz, 1 den büyüktür o yüzden sağına yerleştirilir.
+
+6, 7 den küçüktür, solda 5ten büyüktür, sağa yerleştirilir.
+
+0, 7 den küçüktür, sola gidiyoruz. 5 den küçüktür. Sola gidiyoruz. 1 den küçüktür. O zaman sola yerleştirilir.
+
+9, 7 den büyüktür. Sağdaki note a bakıyoruz. 9, 8 den büyüktür. Sağa yerleştiriyoruz.
+
+4, 7 den küçüktür. Sola gidiyoruz, 4, 5 den küçüktür. Sola gidiyoruz. 4, 1 den büyüktür. Sağa gidiyoruz. 4, 3 den büyüktür. Sağa yerleştiriyoruz.
+
+2, 7 den küçüktür. Sola gidiyoruz. 2, 5 den küçüktür. Sola gidiyoruz. 2, 1 den büyüktür. Sağa gidiyoruz. 2, 3 den küçüktür. Sola yerleştiriyoruz.
+
+Elemanlarımızın tamamını yerleştirdik.
